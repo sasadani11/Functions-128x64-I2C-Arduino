@@ -1,6 +1,6 @@
 # Functions-128x64-I2C-Arduino
 A implementation of Mathematical functions into an I2c screen powered by an Arduino.
-Thanks to _______ that help me when I really needed.
+Thanks to Darthtux#0435 that helped me when I really needed.
 You will need the next libraries if you have an I2c screen controlled by the controler SSD1306:
 
 SPI.h bookstore.
