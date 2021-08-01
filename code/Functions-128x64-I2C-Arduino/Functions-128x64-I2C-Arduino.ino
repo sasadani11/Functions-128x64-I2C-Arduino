@@ -70,18 +70,14 @@ void plot()
 void setup()
 {
   Serial.begin(9600);
-  /*oled.begin(SSD1306_SWITCHCAPVCC, 0x3C);
-    oled.clearDisplay();*/
-
 
   if (!oled.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
     Serial.println("SSD1306 allocation failed");
     for (;;);
   }
+  oled.clearDisplay();
   oled.display();
   delay(2000);
-
-  oled.clearDisplay();
 
   plot();
 
