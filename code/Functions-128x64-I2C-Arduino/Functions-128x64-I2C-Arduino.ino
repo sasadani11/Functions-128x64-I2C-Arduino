@@ -75,10 +75,11 @@ void setup()
     Serial.println("SSD1306 allocation failed");
     for (;;);
   }
-  oled.clearDisplay();
+  
   oled.display();
   delay(2000);
 
+  oled.clearDisplay();
   plot();
 
 }
