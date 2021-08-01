@@ -1,8 +1,10 @@
+//Bookstores.
 #include <SPI.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
+//Screen dimension:
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
 
@@ -11,6 +13,7 @@
 
 Adafruit_SSD1306 oled(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
+//The mathematical function:
 float polynomial(float x)
 {
   const float a = -1;
@@ -20,6 +23,7 @@ float polynomial(float x)
   return a * x*x + b * x + c /*a * x*x + c*/ /*a * x -c*/;
 }
 
+//The heart of the project, it transform the result of the function into screen cordinates;
 void plot()
 {
   const float lower_bound = -15;
