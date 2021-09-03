@@ -49,19 +49,6 @@ void plot()
     
     oled.drawLine(x1, y1 , x2 , y2 , WHITE);//graph draw command
 
-    Serial.print("x1=");
-    Serial.print(x1);
-    Serial.println(" ");
-    Serial.print("x2=");
-    Serial.print(x2);
-    Serial.println(" ");
-    Serial.print("y1=");
-    Serial.print(y1);
-    Serial.println(" ");
-    Serial.print("y2=");
-    Serial.print(y2);
-    Serial.println(" ");
-
     oled.display();
     
   }
